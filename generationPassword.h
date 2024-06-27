@@ -9,10 +9,10 @@ class generationPassword
 {
 private:
     int length;
-    std::string charset;
+    std::string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
 public:
-    generationPassword(const std::string& chars);
+    generationPassword();
     std::string generate();
 };
 

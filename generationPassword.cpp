@@ -1,7 +1,7 @@
 #include "generationPassword.h"
 
-generationPassword::generationPassword(const std::string& chars)
-    : charset(chars)
+generationPassword::generationPassword()
+    : charset("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
 {
     srand(time(0));
     length = rand() % 5 + 8; // случайная длина пароля от 8 до 12 символов
