@@ -1,5 +1,5 @@
-#ifndef generationPassword_H
-#define generationPassword_H
+#ifndef GENERATIONPASSWORD_H
+#define GENERATIONPASSWORD_H
 
 #include <string>
 #include <ctime>
@@ -16,4 +16,4 @@ public:
     std::string generate();
 };
 
-#endif // generationPassword_H
+#endif // GENERATIONPASSWORD_H

@@ -4,7 +4,7 @@ generationPassword::generationPassword(const std::string& chars)
     : charset(chars)
 {
     srand(time(0));
-    length = rand() % 5 + 8; // генерация случайной длины от 8 до 12
+    length = rand() % 5 + 8; // случайная длина пароля от 8 до 12 символов
 }
 
 std::string generationPassword::generate()
